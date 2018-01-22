@@ -1,0 +1,7 @@
+---
+hostname: "infoblox.corp.lan"
+wapi_version: "2.7"
+use_https: true
+ssl_verify: true
+username: "mywapiuser"
+password: "mywapiuserpassword"

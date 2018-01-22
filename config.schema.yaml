@@ -1,0 +1,30 @@
+---
+hostname:
+  description: "Hostname for the Infoblox appliance"
+  type: "string"
+  required: true
+
+wapi_version:
+  description: "WAPI version to use"
+  type: "string"
+  required: true
+
+use_https:
+  description: "Use HTTPS when contacting the API"
+  type: "boolean"
+  required: true
+
+ssl_verify:
+  description: "Verify ssl/tls protocol certs when contacting the API."
+  type: "boolean"
+  required: true
+
+username:
+  description: "WAPI username"
+  type: "string"
+  required: true
+
+password:
+  description: "WAPI password"
+  type: "string"
+  required: true

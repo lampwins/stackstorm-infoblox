@@ -1,0 +1,11 @@
+---
+name: infoblox
+description: A StackStorm pack for integrating with Infoblox
+keywords:
+    - infoblox
+    - networking
+    - ipam
+    - dns
+version: 0.1.0
+author: John Anderson
+email: lampwins@gmail.com

@@ -1,0 +1,29 @@
+---
+name: fixedaddress_post
+pack: infoblox
+runner_type: "python-script"
+description: POST a new fixed address to Infoblox
+enabled: true
+entry_point: base_post_action.py
+parameters:
+  endpoint_uri:
+    immutable: true
+    default: /fixedaddress/
+  agent_circuit_id:
+    type: string
+    description: The agent circuit ID for the fixed address.
+  agent_remote_id:
+    type: string
+    description: The agent remote ID for the fixed address.
+  always_update_dns:
+    type: boolean
+    description: This field controls whether only the DHCP server is allowed to update DNS, regardless of the DHCP client requests.
+  comment:
+    type: string
+    description: Comment for the fixed address; maximum 256 characters.
+  ipv4addr:
+    type: string
+    description: The IPv4 Address of the fixed address.
+  mac:
+    type: string
+    description: The MAC address value for this fixed address.
