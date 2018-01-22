@@ -27,3 +27,6 @@ parameters:
   mac:
     type: string
     description: The MAC address value for this fixed address.
+  name:
+    type: string
+    description: Name for the fixed address.
