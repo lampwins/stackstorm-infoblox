@@ -8,7 +8,7 @@ entry_point: base_post_action.py
 parameters:
   endpoint_uri:
     immutable: true
-    default: /fixedaddress/
+    default: /fixedaddress
   agent_circuit_id:
     type: string
     description: The agent circuit ID for the fixed address.
