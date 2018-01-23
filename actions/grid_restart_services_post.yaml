@@ -1,0 +1,29 @@
+---
+name: grid_restart_services_post
+pack: infoblox
+runner_type: "python-script"
+description: POST to restart grid services
+enabled: true
+entry_point: base_post_action.py
+parameters:
+  endpoint_uri:
+    immutable: true
+    default: /grid/{{ grid }}
+  _function:
+    default: restartservices
+    immutable: true
+  grid:
+    type: string
+    description: The ID of the grid
+  member_order:
+    type: string
+    defult: SEQUENTIALLY
+  restart_option:
+    type: string
+    default: RESTART_IF_NEEDED
+  sequential_delay:
+    type: integer
+    default: 10
+  service_option:
+    type: string
+    default: ALL

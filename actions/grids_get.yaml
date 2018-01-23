@@ -1,0 +1,11 @@
+---
+name: grids_get
+pack: infoblox
+runner_type: "python-script"
+description: Get Grid(s) from Infoblox
+enabled: true
+entry_point: base_get_action.py
+parameters:
+  endpoint_uri:
+    immutable: true
+    default: /grids
