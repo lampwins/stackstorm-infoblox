@@ -30,3 +30,7 @@ parameters:
   name:
     type: string
     description: Name for the fixed address.
+  restart_if_needed:
+    type: boolean
+    description: Restarts the member service.
+    default: false
