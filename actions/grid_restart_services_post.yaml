@@ -8,7 +8,7 @@ entry_point: base_post_action.py
 parameters:
   endpoint_uri:
     immutable: true
-    default: /grid/{{ grid }}
+    default: "/grid/{{ grid }}"
   _function:
     default: restartservices
     immutable: true
