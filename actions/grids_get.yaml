@@ -8,7 +8,7 @@ entry_point: base_get_action.py
 parameters:
   endpoint_uri:
     immutable: true
-    default: /grids
+    default: /grid
   save_in_key_store:
     type: boolean
     default: false
