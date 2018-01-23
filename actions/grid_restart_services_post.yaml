@@ -17,7 +17,7 @@ parameters:
     description: The ID of the grid
   member_order:
     type: string
-    defult: SEQUENTIALLY
+    default: SEQUENTIALLY
   restart_option:
     type: string
     default: RESTART_IF_NEEDED
