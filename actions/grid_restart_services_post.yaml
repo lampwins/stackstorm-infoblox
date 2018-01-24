@@ -8,11 +8,11 @@ entry_point: base_post_action.py
 parameters:
   endpoint_uri:
     immutable: true
-    default: "/grid/{{ grid }}"
+    default: "/grid/{{ obj_ref }}"
   _function:
     default: restartservices
     immutable: true
-  grid:
+  obj_ref:
     type: string
     description: The ID of the grid
   member_order:

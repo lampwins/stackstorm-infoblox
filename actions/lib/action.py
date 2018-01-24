@@ -31,6 +31,9 @@ class InfobloxBaseAction(Action):
             self.config['password']
         )
 
+        # remove `obj_ref` from params if present
+        kwargs.pop('obj_ref')
+
         # transform `in__id` if present
         if kwargs.get('id__in'):
             kwargs['id__in'] = ','.join(kwargs['id__in'])
