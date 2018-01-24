@@ -32,7 +32,8 @@ class InfobloxBaseAction(Action):
         )
 
         # remove `obj_ref` from params if present
-        kwargs.pop('obj_ref')
+        if kwargs.get('obj_ref', False):
+            kwargs.pop('obj_ref')
 
         # transform `in__id` if present
         if kwargs.get('id__in'):
